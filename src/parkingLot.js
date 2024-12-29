@@ -66,4 +66,4 @@ class ParkingLot {
     }
 }
 
-export default ParkingLot;
+module.exports = ParkingLot;
