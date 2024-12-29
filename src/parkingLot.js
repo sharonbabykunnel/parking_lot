@@ -65,3 +65,5 @@ class ParkingLot {
         return slotNumber !== -1 ? (slotNumber + 1).toString() : "Not found";
     }
 }
+
+export default ParkingLot;
