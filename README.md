@@ -30,29 +30,32 @@ chmod +x bin/parking_lot
 
 ### For Windows:
 
+
+### For Git Bash:
+
 1. Clone the repository:
-```batch
+```bash
 git clone https://github.com/sharonbabykunnel/parking_lot.git
 cd parking_lot
 ```
-### For Command Prompt:
 
-2. Run the setup script using Command Prompt (cmd.exe):
-```batch
-bin\setup.bat
+2. Make the setup script executable:
+```bash
+chmod +x bin/setup.sh
+chmod +x bin/parking_lot
 ```
-### For Git Bash:
-```batch
+
+3. Run the setup script using Git Bash:
+```bash
 dos2unix bin/setup.sh
 bin\setup.sh
 ```
 
-
-Note: Do not use PowerShell Windows setup. Use Command Prompt (cmd.exe or Git Bash) instead.
+Note: Do not use PowerShell Windows or Command Promt setup. Use Git Bash instead.
 
 ## Running the Program
 
-### For Linux/Mac OS:
+### For Linux/Mac/Windows (using Git Bash ) OS:
 
 1. Interactive Mode:
 ```bash
@@ -62,18 +65,6 @@ Note: Do not use PowerShell Windows setup. Use Command Prompt (cmd.exe or Git Ba
 2. File Input Mode:
 ```bash
 ./bin/parking_lot file_inputs.txt
-```
-
-### For Windows (using Command Prompt):
-
-1. Interactive Mode:
-```batch
-bin\parking_lot.bat
-```
-
-2. File Input Mode:
-```batch
-bin\parking_lot.bat file_inputs.txt
 ```
 
 ## Available Commands
@@ -111,25 +102,10 @@ Slot No.    Registration No    Color
 3           KA-01-BB-0001     Black
 ```
 
-## File Input Format
-
-If you're using file input mode, the file should contain commands in the same format as the interactive mode, with one command per line. Example:
-
-```
-create_parking_lot 6
-park KA-01-HH-1234 White
-park KA-01-HH-9999 White
-status
-```
 
 ## Troubleshooting
 
-### Windows-specific Issues:
-- If you get permission errors, try running Command Prompt as Administrator
-- Make sure you're using Command Prompt (cmd.exe) and not PowerShell or Git Bash
-- Ensure all files have proper line endings (CRLF for Windows)
-
-### Linux/Mac-specific Issues:
+### Linux/ Mac/ Windows-specific Issues:
 - If you get "Permission denied" errors, run:
   ```bash
   chmod +x bin/setup.sh
@@ -146,8 +122,8 @@ status
 ```
 parking_lot/
 ├── bin/
-│   ├── setup.sh (or setup.bat for Windows)
-│   └── parking_lot (or parking_lot.bat for Windows)
+│   ├── setup.sh 
+│   └── parking_lot 
 ├── src/
 │   ├── parkingLot.js
 │   └── main.js
