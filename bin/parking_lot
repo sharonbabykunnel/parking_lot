@@ -1,10 +1,10 @@
-const parkingLotScript = `#!/usr/bin/env node
-const path = require('path');
-const main = require('../src/main.js');
+#!/usr/bin/env node
+const path = require("path");
+const main = require("../src/main.js");
 
 const args = process.argv.slice(2);
 if (args.length > 0) {
-    main.processFile(path.resolve(args[0]));
+  main.processFile(path.resolve(args[0]));
 } else {
-    main.startInteractiveMode();
-}`;
+  main.startInteractiveMode();
+}

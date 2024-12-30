@@ -2,7 +2,10 @@
   "name": "parking_lot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.js",
+  "bin":{
+    "parking_lot":"./bin/parking_lot"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
