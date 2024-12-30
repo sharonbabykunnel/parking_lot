@@ -4,8 +4,8 @@ An automated ticketing system that allows customers to use a parking lot without
 
 ## Prerequisites
 
-- Node.js 
-- npm 
+- Node.js (v12 or higher)
+- npm (Node Package Manager)
 
 ## Installation & Setup
 
@@ -35,13 +35,20 @@ chmod +x bin/parking_lot
 git clone https://github.com/sharonbabykunnel/parking_lot.git
 cd parking_lot
 ```
+### For Command Prompt:
 
 2. Run the setup script using Command Prompt (cmd.exe):
 ```batch
+bin\setup.bat
+```
+### For Git Bash:
+```batch
+dos2unix bin/setup.sh
 bin\setup.sh
 ```
 
-Note: Do not use PowerShell or Git Bash for Windows setup. Use Command Prompt (cmd.exe) instead.
+
+Note: Do not use PowerShell Windows setup. Use Command Prompt (cmd.exe or Git Bash) instead.
 
 ## Running the Program
 
@@ -61,12 +68,12 @@ Note: Do not use PowerShell or Git Bash for Windows setup. Use Command Prompt (c
 
 1. Interactive Mode:
 ```batch
-bin\parking_lot.sh
+bin\parking_lot.bat
 ```
 
 2. File Input Mode:
 ```batch
-bin\parking_lot.sh file_inputs.txt
+bin\parking_lot.bat file_inputs.txt
 ```
 
 ## Available Commands
